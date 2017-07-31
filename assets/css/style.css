@@ -1,0 +1,20 @@
+.jumbotron {
+	background: #d9534f;
+	color: #fff;
+}
+
+#train-input {
+	padding: 15px;
+}
+
+input {
+	padding-left: 15px;
+}
+
+label {
+	margin-top: 5px;
+}
+
+.btn {
+	margin-top: 15px;
+}
