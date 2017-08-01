@@ -83,6 +83,7 @@ $(document).ready(function() {
 			console.log(childKey);
 
 
+
 			formatTime = "HH mm";
 			convertedTime = moment(snapshot.val().arrivalTime, formatTime);
 			
@@ -108,32 +109,30 @@ $(document).ready(function() {
 			//------------------------------
 			var nextArrival = moment().add(minTill, "minutes");
 			console.log("arrival time: " + moment(nextArrival).format("HH:mm"));
+
 			
 			var row = $("<tr>");
-			var cell = $("<td>");
+			var butcell = $("<td>");
+			var nameCell = $("<td>");
+			var destCell = $("<td>");
+			var freqCell = $("<td>");
+			var nextCell = $("<td>");
+			var minCell = $("<td>");
+
 			var button = $("<button>");
 			button.addClass("remove btn-defualt");
 			button.attr("data-key", childKey);
 			var span = $("<span>");
 			span.addClass("glyphicon glyphicon-remove");
-			$(button).append(span);
-			$(cell).append(button);
-			$(row).append(cell);
+			button.append(span);
+			butcell.append(button);
+			nameCell.append(snapshot.val().name);
+			destCell.append(snapshot.val().destination);
+			freqCell.append(snapshot.val().frequency);
+			nextCell.append(moment(nextArrival).format("hh:mm A"));
+			minCell.append(minTill + " mins");
 
-
-			var trainRow = "<td>"
-				+ 
-				snapshot.val().name + "</td><td>"			        //Train name snapshot from FB database
-				+
-				snapshot.val().destination + "</td><td>"	        //Train destination snapshot from FB database
-				+
-				snapshot.val().frequency + "</td><td>"		        //Train frequency snapshot from FB database
-				+
-				moment(nextArrival).format("hh:mm A") + "</td><td>"	//Train next arrival time snapshot from FB database
-				+
-				minTill + " mins" + "</td>";			        //Train time till next arrival snapshot from FB database
-			
-			$(row).append(trainRow);	
+			$(row).append(butcell).append(nameCell).append(destCell).append(freqCell).append(nextCell).append(minCell);	
 			$("#train-table").append(row);
 
 			$(".remove").on("click", function() {
@@ -157,7 +156,7 @@ $(document).ready(function() {
 
 	//calls the main program
 	main();
-	
+
 
 });
 
