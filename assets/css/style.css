@@ -18,3 +18,11 @@ label {
 .btn {
 	margin-top: 15px;
 }
+
+.but {
+	padding: 0;
+}
+
+.delete {
+	margin-right: 5px;
+}
