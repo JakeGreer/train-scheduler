@@ -10,14 +10,14 @@ Train Scheduler is an app that utilizes a Firebase database to store and calcula
 
 Technologies Utilized
 
-Moment JS
-Firebase
-Javascript
-JQuery
-HTML
-Bootstrap
-CSS
+* Moment JS - captures the time current time which is then used for time calculations on the trains
+* Firebase - used as the database
+* Javascript - Handled logic
+* JQuery - JavaScript frmaework - handled logic
+* HTML - Markup
+* Bootstrap - CSS Framework
+* CSS - Custom Styling
 
-Link
+# Deployment
 
-https:/Jakegreer.github.io/train-scheduler
+* https:/Jakegreer.github.io/train-scheduler
