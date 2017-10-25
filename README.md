@@ -1,6 +1,6 @@
-Train Scheduler
+# Train Scheduler
 
-Member:
+# Author
 Jake Greer (Frontend / Backend)
 
 
