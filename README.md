@@ -1,12 +1,10 @@
 # Train Scheduler
 
+Train Scheduler is an app that utilizes a Firebase database to store and calculate train arrivals and departures. A user can interface with the app to add a train to the schedule. The app constantly calculates train arrivals based off of its initial start time. 
+
 # Author
 Jake Greer (Frontend / Backend)
 
-
-About Train Scheduler
-
-Train Scheduler is an app that utilizes a Firebase database to store and calculate train arrivals and departures. A user can interface with the app to add a train to the schedule. The app constantly calculates train arrivals based off of its initial start time. 
 
 Technologies Utilized
 
